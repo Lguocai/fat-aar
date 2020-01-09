@@ -9,7 +9,7 @@ apply plugin: 'java'
 apply plugin: 'groovy'
 
 ext {
-    versionId = '1.1.0'
+    versionId = '1.1.1'
     groupId = 'fat-aar'
     name = 'fat-aar'
     website = 'https://github.com/Lguocai/fat-aar'
@@ -69,6 +69,8 @@ repositories {
 
 dependencies {
     implementation 'com.android.tools.build:gradle:3.5.1'
+    implementation 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+    implementation "com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4"
 }//最好加上全局编码设置
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
