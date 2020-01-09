@@ -10,7 +10,7 @@ apply plugin: 'groovy'
 
 ext {
     versionId = '1.1.0'
-    groupId = 'Garyfat_aar'
+    groupId = 'fat-aar'
     name = 'fat-aar'
     website = 'https://github.com/Lguocai/fat-aar'
     vcsUrl = 'https://github.com/Lguocai/fat-aar.git'
@@ -28,7 +28,7 @@ bintray {
     key = properties.getProperty('bintrayApiKey')
     configurations = ['archives']
     pkg {
-        repo = 'gradle'
+        repo = 'fat-aar'
         name = project.ext.name
         licenses = ['MIT']
         vcsUrl = project.ext.vcsUrl
@@ -69,4 +69,7 @@ repositories {
 
 dependencies {
     implementation 'com.android.tools.build:gradle:3.5.1'
+}//最好加上全局编码设置
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
