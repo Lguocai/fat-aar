@@ -10,10 +10,10 @@ apply plugin: 'groovy'
 
 ext {
     versionId = '1.1.0'
-    groupId = 'com.cpdroid'
+    groupId = 'Garyfat_aar'
     name = 'fat-aar'
-    website = 'https://github.com/cpdroid/fat-aar'
-    vcsUrl = 'https://github.com/cpdroid/fat-aar.git'
+    website = 'https://github.com/Lguocai/fat-aar'
+    vcsUrl = 'https://github.com/Lguocai/fat-aar.git'
     tags = ['fat-aar', 'aar', 'fat', 'android', 'fataar']
 }
 
